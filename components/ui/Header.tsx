@@ -1,11 +1,10 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
-import Button from './Button'
 import { FiMenu, FiX } from 'react-icons/fi'
-import { useState } from 'react'
 import Image from 'next/image'
-import {NavLinks} from '@/data'
+import { Button, NavLinks } from '@/lib/imports'
+
 
 const Header = () => {
 
