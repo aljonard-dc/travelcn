@@ -1,14 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { ReactNode } from "react";
-
-type ButtonProps = {
-  title: string | ReactNode; 
-  icon?: ReactNode;
-  className?: string;
-  href: string;
-  target?: "_self" | "_blank" | "_parent" | "_top"; 
-};
+import { ButtonProps } from "@/lib/props";
 
 const Button: React.FC<ButtonProps> = ({
   title,
