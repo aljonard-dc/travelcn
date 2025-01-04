@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Newsreader } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/ui/Header";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -8,6 +9,11 @@ const inter = Inter({
   weight: ["400","500", "600", "700"],
 })
 
+const newsreader = Newsreader({
+  variable: "--font-newsreader",
+  subsets: ["latin"],
+  weight: ["400","500", "600", "700"],
+})
 export const metadata: Metadata = {
   title: "Travel CN",
   description: "Start your travel with us",
@@ -21,8 +27,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} antialiased`}
-      >
+        className={`${newsreader.className} antialiased`}>
+
+      
         {children}
       </body>
     </html>
