@@ -3,15 +3,15 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import { FiMenu, FiX } from 'react-icons/fi'
 import Image from 'next/image'
-import { Button, navLinks } from '@/lib/imports'
+import { navLinks } from '@/lib/imports'
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-    <header className='w-full border-b '>
-        <div className='w-full p-5 mx-auto flex justify-around gap-3 bg-green-700 '>
-            <div className='flex items-center gap-1'>
+    <header className='fixed top-0 z-50 w-full -mx-mobile-margin md:-mx-tablet-margin lg:-mx-laptop-margin xl:-mx-desktop-margin'>
+        <div className='py-5 flex justify-between items-center bg-green-700 px-mobile-margin md:px-tablet-margin lg:px-laptop-margin xl:px-desktop-margin'>
+            <div className='flex items-center'>
                 <Image src="/logo.svg" alt="logo" width={50} height={50}></Image>
                 <span className='text-2xl font-bold text-white'>Travel</span>
                 <span className='text-2xl font-bold text-yellow-500'> CN</span>
@@ -19,10 +19,10 @@ const Header = () => {
         
             <div className='flex items-center'>  
                 <nav className='hidden lg:block'>
-                    <ul className='flex text-base gap-10 text-white '>
+                    <ul className='flex text-base gap-10 text-white'>
                         {
                             navLinks.map((link) => (
-                                <li key={link.id} className='hover:text-green-200 hover:border-b hover:border-green-500'>
+                                <li key={link.id} className='border-b-4 border-transparent hover:border-green-500'>
                                     <Link href={link.href}> {link.title}</Link>
                                 </li>
                             ))}
@@ -48,7 +48,7 @@ const Header = () => {
                 navLinks.map((link) => (
                     <li
                     key={link.id}
-                    className="hover:text-green-200 hover:border-b hover:border-green-500">
+                    className="border-b-4 border-transparent hover:border-green-500">
                     <Link href={link.href}>{link.title}</Link>
                     </li>
                 ))

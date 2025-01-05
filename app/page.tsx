@@ -5,16 +5,14 @@ import {
   } from '@/lib/imports'
 
 export default function Home() {
-  const id1 = 1;
-  const id2 = 2;
 
   return (
     <main id="home" className='relative overflow-hidden'>
       <div className='px-mobile-margin md:px-tablet-margin lg:px-laptop-margin xl:px-desktop-margin'>
-      <Header />
+        <Header />
         <Hero />
-        <Trends id={id1}/>
-        <Trends id={id2}/>
+        <Trends id={1}/>
+        <Trends id={2}/>
       </div>
 
    </main>
