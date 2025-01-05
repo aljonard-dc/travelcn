@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import { FiMenu, FiX } from 'react-icons/fi'
 import Image from 'next/image'
-import { Button, NavLinks } from '@/lib/imports'
+import { Button, navLinks } from '@/lib/imports'
 
 
 const Header = () => {
@@ -23,7 +23,7 @@ const Header = () => {
                 <nav className='hidden lg:block'>
                     <ul className='flex text-base gap-10 text-white '>
                         {
-                            NavLinks.map((link) => (
+                            navLinks.map((link) => (
                                 <li key={link.id} className='hover:text-green-200 hover:border-b hover:border-green-500'>
                                     <Link href={link.href}> {link.title}</Link>
                                 </li>
@@ -49,7 +49,7 @@ const Header = () => {
             className={`${menuOpen ? 'block' : 'hidden' } lg:hidden bg-green-700 w-full`}>
             <ul className="flex flex-col items-center text-white text-base gap-4 p-4">
             {
-                NavLinks.map((link) => (
+                navLinks.map((link) => (
                     <li
                     key={link.id}
                     className="hover:text-green-200 hover:border-b hover:border-green-500">
