@@ -8,6 +8,12 @@ export default {
   ],
   theme: {
     extend: {
+      spacing: {
+        'mobile-margin': '1rem', 
+        'tablet-margin': '3.75rem', 
+        'laptop-margin': '6.25rem', 
+        'desktop-margin': '7.5rem', 
+      }, 
       colors: {
         white: {
           DEFAULT: "#ffffff",
@@ -74,12 +80,15 @@ export default {
         'large': '12px',
       },
       screens: {
-  			sm: '320px',
-  			md: '425px',
-  			lg: '768px',
-  			xl: '1024px',
-  			'2xl': '1440px'
-  		}
+        'sm': '640px',  // Small devices
+        'md': '768px',  // Tablets
+        'lg': '1024px', // Laptops
+        'xl': '1280px', // Desktops
+        '2xl': '1536px', // Large screens
+        // Custom breakpoints
+        'xs': '480px', 
+        '3xl': '1920px', 
+      },
       
     },
   },
