@@ -5,9 +5,7 @@ import { FiMenu, FiX } from 'react-icons/fi'
 import Image from 'next/image'
 import { Button, navLinks } from '@/lib/imports'
 
-
 const Header = () => {
-
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
@@ -27,24 +25,22 @@ const Header = () => {
                                 <li key={link.id} className='hover:text-green-200 hover:border-b hover:border-green-500'>
                                     <Link href={link.href}> {link.title}</Link>
                                 </li>
-                            ))
-                        }           
-                    </ul>
-                </nav>
-              
-            
-            </div>
-            <div className="flex items-center gap-4">
-                <Button title="Save our spot" href="/" />
-                <button
-                    className="lg:hidden text-white"
-                    onClick={() => setMenuOpen(!menuOpen)}>
-                    {menuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
-                </button>
+                            ))}
+                        </ul>
+                    </nav>
+                </div>
+
+                {/* Mobile Menu Button */}
+                <div className="lg:hidden flex items-center gap-4">
+                    <button
+                        className="text-white"
+                        onClick={() => setMenuOpen(!menuOpen)}>
+                        {menuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+                    </button>
+                </div>
             </div>
 
-            
-        </div>
+        {/* Mobile Menu */}
         <nav
             className={`${menuOpen ? 'block' : 'hidden' } lg:hidden bg-green-700 w-full`}>
             <ul className="flex flex-col items-center text-white text-base gap-4 p-4">
@@ -63,4 +59,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default Header;

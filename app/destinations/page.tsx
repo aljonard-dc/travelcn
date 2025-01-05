@@ -1,10 +1,13 @@
+import HeroDestination from '@/components/HeroDestination'
+import Header from '@/components/ui/Header'
 import React from 'react'
 
 const page = () => {
   return (
-    <main className=''>
-        <h1 className='text-2xl font-bold text-black'> Destination Page</h1>
-    </main>
+    <main id="home">
+        <Header />
+        <HeroDestination/>
+   </main>
   )
 }
 
