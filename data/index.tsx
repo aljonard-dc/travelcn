@@ -3,7 +3,7 @@ export const NavLinks = [
     {
         id:1,
         title:"Home",
-        href:"#home"
+        href:"/"
     },
     {
         id:2,
