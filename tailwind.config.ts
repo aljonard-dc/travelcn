@@ -8,6 +8,12 @@ export default {
   ],
   theme: {
     extend: {
+      spacing: {
+        'mobile-margin': '1rem', 
+        'tablet-margin': '3.75rem', 
+        'laptop-margin': '6.25rem', 
+        'desktop-margin': '7.5rem', 
+      }, 
       colors: {
         white: {
           DEFAULT: "#ffffff",
@@ -78,7 +84,8 @@ export default {
         'md': '768px',  // Tablets
         'lg': '1024px', // Laptops
         'xl': '1280px', // Desktops
-        '2xl': '1536px', // Large screen
+        '2xl': '1536px', // Large screens
+        // Custom breakpoints
         'xs': '480px', 
         '3xl': '1920px', 
       },
