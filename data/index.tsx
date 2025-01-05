@@ -37,7 +37,7 @@ export const trends = [
             },{
                 id: 3,
                 title: "Mercedes Group of Islands",
-                img: "/Trends/islands.png",
+                img: "/Trends/mercedes-islands.png",
                 desc: "This group of seven islands, including Apuao Grande and Canimog Island, offers pristine white sand beaches, turquoise waters, and for snorkeling, trekking, and exploring marine sanctuaries.",
             }
         ]
