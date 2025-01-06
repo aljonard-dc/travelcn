@@ -16,6 +16,7 @@ export const navLinks = [
         href:"festivals/"
     },
 ]
+
 export const heroContent = [
     {
         id:1,
