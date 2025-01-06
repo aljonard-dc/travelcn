@@ -1,9 +1,9 @@
 import React from 'react'
-import { Card, trends } from '@/lib/imports'
+import { Card, trends, Button } from '@/lib/imports'
 
 const Trends = ({id}: {id:number}) => {
   return (
-    <section className='flex justify-center items-center py-8'>
+    <section className='flex-1 justify-center items-center py-8'>
         {
             trends.filter(item => item.id === id)
             .map((item, idx) => (
@@ -23,6 +23,10 @@ const Trends = ({id}: {id:number}) => {
                 </div>
             ))
         }
+
+        <div className='flex items-center justify-center mt-6 md:mt-8'>
+            <Button title='Learn More!' href={`${id === 1 ? '/destinations' :  '/festivals'}`}/>
+        </div>
     </section>
     
   )
