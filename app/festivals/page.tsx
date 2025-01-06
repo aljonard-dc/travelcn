@@ -1,10 +1,15 @@
 import React from 'react'
+import { Hero, Header } from '@/lib/imports' 
 
 const page = () => {
+
   return (
-    <main className=''>
-        <h1 className='text-2xl font-bold text-black'> Festival Page</h1>
-    </main>
+    <main id="home">
+        <div className='px-mobile-margin md:px-tablet-margin lg:px-laptop-margin xl:px-desktop-margin'>
+            <Header />
+            <Hero id={3} type='festival'/>
+        </div>
+   </main>
   )
 }
 
