@@ -13,4 +13,5 @@ export { default as Trends } from '@/components/Trends';
 export {
     navLinks,
     trends,
+    heroContents,
 } from '@/data';

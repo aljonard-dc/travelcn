@@ -17,7 +17,6 @@ export const navLinks = [
     },
 ]
 
-
 export const trends = [
     {
         id: 1,
