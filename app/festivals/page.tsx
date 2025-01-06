@@ -1,7 +1,5 @@
-import Hero from '@/components/Hero';
-import HeroDestination from '@/components/HeroDestination'
-import Header from '@/components/ui/Header'
 import React from 'react'
+import { Hero, Header } from '@/lib/imports' 
 
 const page = () => {
 
