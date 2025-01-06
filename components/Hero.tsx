@@ -1,30 +1,60 @@
 import React from 'react';
 import Image from 'next/image';
-import Button from './ui/Button';
+import { heroContent, Button } from '@/lib/imports';
 
-const Hero = () => {
+const Hero = ({id, type}:{id:number; type?:"home" | "destination" | "festival"}) => {
   return (
-    <main className="hero-container">
-      <div className="relative w-full h-screen flex items-center justify-center">
-        <Image
-            src="/Banner/home.png"
-            alt="banner"
-            layout="fill"
-            objectFit="cover"
-            quality={100} 
-        />
-        <div className="hero-content space-y-10 absolute px-5 py-10 md:px-40 md:py-20 bg-green-600/80 flex flex-col items-center justify-center text-white">
-            <h2 className="text-base text-center font-bold">LIFE SHOULD BE FILLED WITH</h2>
-            <h1 className="text-2xl md:text-3xl lg:text-5xl mt-2 text-center">COMFORT, DISCOVERIES,{<br />} AND FREEDOM.</h1>
-            <Button 
-            className='absolute bottom-[-1.5em] rounded-none text-base text-white bg-yellow-500 px-6 md:px-24 py-3' 
-            title="Visit Now!" 
-            href="/"/>
-           
-        </div>
+    <section className="-mx-mobile-margin md:-mx-tablet-margin lg:-mx-laptop-margin xl:-mx-desktop-margin">
+      {
+        heroContent.filter(content => content.id === id)
+        .map(content => (
+          <div 
+          key={content.id}
+          className="relative w-full h-screen flex items-center justify-center">
+          <Image
+              src={content.img}
+              alt="banner"
+              layout="fill"
+              objectFit="cover"
+              quality={100} 
+          />
+             {/* Home Hero Content */}
+             {type === "home" && (
+              <div className="absolute max-w-[700px] py-16 px-14 bg-green-600/80 flex flex-col items-center justify-center text-white">
+                <h2 className="text-base text-center font-semibold opacity-90 pb-6">
+                  {content.sub}
+                </h2>
+                <h1 className="text-2xl md:text-3xl lg:text-4xl text-center font-semibold">
+                  {content.caption}
+                </h1>
+                <p className='absolute bottom-[-1.5em] rounded-none text-base text-white bg-yellow-500 px-6 md:px-24 py-3'>
+                    Visit Now!
+                </p>
+              </div>
+            )}
+
+            {/* Destination and Festival Hero Content */}
+            {(type === "destination" || type === "festival") && (
+              <div
+                className={`${
+                  type === "destination"
+                    ? "bg-green-600/80"
+                    : "bg-yellow-700/80"
+                }  text-white max-w-[700px] absolute lg:left-32 lg:top-40 p-16 `}>
+
+                <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-6">
+                  {content.caption}
+                </h1>
+                <Button
+                  title="Discover"
+                  href="/"
+                />
+              </div>
+            )}
+          </div>
+        ))}
      
-      </div>
-    </main>
+    </section>
   );
 };
 

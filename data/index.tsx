@@ -16,7 +16,27 @@ export const navLinks = [
         href:"festivals/"
     },
 ]
-
+export const heroContent = [
+    {
+        id:1,
+        sub: "LIFE SHOULD BE FILLED WITH",
+        caption: "COMFORT, DISCOVERIES, AND FREEDOM.",
+        img:"/Banner/home.png",
+     
+    },
+    {
+        id: 2,
+        img: "/Banner/destination.png",
+        caption: "THE BIGGEST ADVENTURE YOU CAN EVER TAKE IS TO LIVE THE LIFE OF YOUR DREAMS" 
+    },
+      
+    {
+        id:3,
+        img:"/Banner/festival.png",
+        caption: "WE CAN EASILY FORGET ALL OUR WORRIES IN A FESTIVE CROWD"
+      
+    },
+]
 
 export const trends = [
     {
