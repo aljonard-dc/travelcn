@@ -1,12 +1,11 @@
-import HeroDestination from '@/components/HeroDestination'
-import Header from '@/components/ui/Header'
 import React from 'react'
+import { Header, DetailedPage } from "@/lib/imports"
 
 const page = () => {
   return (
-    <main id="home">
+    <main id="destination" className='px-mobile-margin md:px-tablet-margin lg:px-laptop-margin xl:px-desktop-margin'>
         <Header />
-        <HeroDestination/>
+        <DetailedPage id={1}/>
    </main>
   )
 }

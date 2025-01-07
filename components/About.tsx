@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const About = () => {
   return (
     <section className='bg-green-100 my-8 py-8 -mx-mobile-margin md:-mx-tablet-margin lg:-mx-laptop-margin xl:-mx-desktop-margin'>
