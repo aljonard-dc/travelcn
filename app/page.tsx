@@ -1,3 +1,4 @@
+import Footer from '@/components/ui/Footer';
 import { 
     Header,
     Hero,
@@ -17,6 +18,7 @@ export default function Home() {
         <About />
         <Trends id={1}/>
         <Trends id={2}/>
+        <Footer/>
       </div>
 
    </main>
