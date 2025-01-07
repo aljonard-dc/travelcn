@@ -3,7 +3,7 @@ import { travelCN, Button } from '@/lib/imports'
 
 const DetailedPage = ({id}: {id: number}) => {
   return (
-    <section className='-mx-mobile-margin md:-mx-tablet-margin lg:-mx-laptop-margin xl:-mx-desktop-margin'>
+    <section id="detailed" className='-mx-mobile-margin md:-mx-tablet-margin lg:-mx-laptop-margin xl:-mx-desktop-margin'>
         <div className='py-8'>
             {
                 travelCN.filter(item => item.id === id)
