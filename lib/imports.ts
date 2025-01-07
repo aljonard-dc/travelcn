@@ -7,6 +7,7 @@ export { default as Card } from '@/components/ui/Card';
 //components
 export { default as Trends } from '@/components/Trends';
 export { default as About } from '@/components/About';
+export { default as DetailedPage } from '@/components/DetailedPage';
 export { default as Hero } from '@/components/Hero';
 
 
@@ -15,7 +16,7 @@ export { default as Hero } from '@/components/Hero';
 export {
     navLinks,
     trends,
+    travelCN,
     heroContent,
-
 } from '@/data';
 

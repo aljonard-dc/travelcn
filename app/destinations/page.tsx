@@ -1,14 +1,17 @@
 import React from 'react'
-import { Hero, Header } from '@/lib/imports' 
+import { Header, Hero, DetailedPage } from "@/lib/imports"
+ 
 
 const page = () => {
 
   return (
-    <main id="home">
-        <div className='px-mobile-margin md:px-tablet-margin lg:px-laptop-margin xl:px-desktop-margin'>
-            <Header />
-            <Hero id={2} type='destination'/>
-        </div>
+    <main id="destination" className='px-mobile-margin md:px-tablet-margin lg:px-laptop-margin xl:px-desktop-margin'>
+      <div>
+        <Header />
+        <Hero id={2} type='destination'/>
+        <DetailedPage id={1}/>
+      </div>
+
    </main>
   )
 }
