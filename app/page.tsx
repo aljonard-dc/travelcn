@@ -1,6 +1,6 @@
-import Qoutes from '@/components/Qoutes';
 import { 
     Header,
+    Footer,
     Hero,
     Trends,
     About,
@@ -18,7 +18,7 @@ export default function Home() {
         <About />
         <Trends id={1}/>
         <Trends id={2}/>
-        <Qoutes/>
+        <Footer/>
       </div>
       
    </main>
