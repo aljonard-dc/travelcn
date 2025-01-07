@@ -12,7 +12,7 @@ const DetailedPage = ({id}: {id: number}) => {
                         {
                             item.places && item.places.map((place, idx) => (
                                 <div key={place.id} className={`${idx % 2 === 0 ? 'bg-white': id === 1 ? 'bg-green-100' : 'bg-yellow-100'} grid grid-cols-1 md:grid-cols-2 text-center md:text-start gap-6 py-8 items-center px-mobile-margin md:px-tablet-margin lg:px-laptop-margin xl:px-desktop-margin`}>
-                                    <div className={`md:${idx % 2 === 0 ? 'order-2':'order-1'}`}>
+                                    <div className={`${idx % 2 === 0 ? 'order-2':'order-2 md:order-1'}`}>
                                         <h1 className='text-green-950 text-2xl md:text-3xl lg:text-4xl font-semibold pb-2'>{place.name}</h1>
                                         <h2 className='text-green-950/80 text-base md:text-lg lg:text-xl font-semibold pb-6'>{place.location}</h2>
                                         <p className='flex text-green-950/90 text-sm md:text-base lg:text-lg pb-7'>{place.description}</p>
@@ -21,7 +21,7 @@ const DetailedPage = ({id}: {id: number}) => {
                                         </div>
                                         
                                     </div>
-                                    <div className={`${idx % 2 === 0 ? 'order-1':'order-2'} h-full w-auto`}>
+                                    <div className={`${idx % 2 === 0 ? 'order-1':'order-1 md:order-2'} h-full w-auto`}>
                                         <img src={place.img} alt={place.name} className='w-full h-full object-cover'/>
                                     </div>
 
