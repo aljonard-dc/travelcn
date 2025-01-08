@@ -22,8 +22,10 @@ const Hero = ({id, type}:{id:number; type?:"home" | "destination" | "festival"})
 
              {/* Home Hero Content */}
              {type === "home" && (
-              <div className="absolute max-w-[700px] py-16 px-14 bg-green-600/80 
-              flex flex-col items-center justify-center text-white mx-4 text-center">
+              <div className="absolute max-w-[700px] py-16 px-16 bg-green-600/80 
+              flex flex-col items-center justify-center text-white text-center
+              mx-mobile-margin md:mx-tablet-margin lg:mx-laptop-margin xl:mx-desktop-margin
+              ">
                 
                 <h2 className="text-base text-center font-semibold opacity-90 pb-6">
                   {content.sub}
@@ -47,7 +49,9 @@ const Hero = ({id, type}:{id:number; type?:"home" | "destination" | "festival"})
                   type === "destination"
                     ? "bg-green-600/80"
                     : "bg-yellow-700/80"
-                } mx-4 flex flex-col items-center md:items-start text-center md:text-start text-white max-w-[700px] absolute lg:left-32 lg:top-40 p-8 md:p-16 `}>
+                } flex flex-col items-center md:items-start text-center md:text-start text-white max-w-[700px] absolute lg:left-0 lg:top-40 p-8 md:p-16 
+                mx-mobile-margin md:mx-tablet-margin lg:mx-laptop-margin xl:mx-desktop-margin
+                `}>
 
                 <h1 className=" text-2xl md:text-3xl lg:text-4xl font-semibold mb-6">
                   {content.caption}

@@ -8,12 +8,12 @@ export const navLinks = [
     {
         id:2,
         title:"Destinations",
-        href:"destinations/"
+        href:"/destinations"
     },
     {
         id:3,
         title:"Festivals",
-        href:"festivals/"
+        href:"/festivals"
     },
 ]
 
