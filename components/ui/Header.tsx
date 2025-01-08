@@ -1,12 +1,16 @@
 'use client'
 import React, { useState } from 'react'
+import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import { FiMenu, FiX } from 'react-icons/fi'
 import Image from 'next/image'
 import { navLinks } from '@/lib/imports'
 
+
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const pathName = usePathname();
+
 
     return (
     <header className='fixed top-0 z-50 w-full -mx-mobile-margin md:-mx-tablet-margin lg:-mx-laptop-margin xl:-mx-desktop-margin'>
@@ -22,7 +26,9 @@ const Header = () => {
                     <ul className='flex text-base gap-10 text-white'>
                         {
                             navLinks.map((link) => (
-                                <li key={link.id} className='border-b-4 border-transparent hover:border-green-500'>
+                                <li key={link.id} className={`
+                                    ${pathName === link.href ? 'border-b-4 border-green-500': 'border-b-4 border-transparent hover:border-green-500'}
+                                `}>
                                     <Link href={link.href}> {link.title}</Link>
                                 </li>
                             ))}
@@ -48,7 +54,9 @@ const Header = () => {
                 navLinks.map((link) => (
                     <li
                     key={link.id}
-                    className="border-b-4 border-transparent hover:border-green-500">
+                    className={`
+                        ${pathName === link.href ? 'border-b-4 border-green-500': 'border-b-4 border-transparent hover:border-green-500'}
+                    `}>
                     <Link href={link.href}>{link.title}</Link>
                     </li>
                 ))
