@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import { FiMenu, FiX } from 'react-icons/fi'
@@ -9,12 +9,38 @@ import { navLinks } from '@/lib/imports'
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [isVisible, setIsVisible] = useState(true);
+    const [lastScroll, setLastScroll] = useState(0);
     const pathName = usePathname();
+
+    const getScroll = () => {
+        if(typeof window !== 'undefined'){
+            if(window.scrollY > lastScroll) {
+                setIsVisible(false);
+            }else {
+                setIsVisible(true);
+            }
+            setLastScroll(window.scrollY);
+        }
+    };
+
+
+    useEffect(() => {
+        if(typeof window !== 'undefined') {
+            window.addEventListener('scroll', getScroll);
+
+            return () => {
+                window.removeEventListener('scroll', getScroll);
+            }
+        }
+    },[lastScroll]);
 
 
     return (
-    <header className='fixed top-0 z-50 w-full -mx-mobile-margin md:-mx-tablet-margin lg:-mx-laptop-margin xl:-mx-desktop-margin'>
-        <div className='py-5 flex justify-between items-center bg-green-700 px-mobile-margin md:px-tablet-margin lg:px-laptop-margin xl:px-desktop-margin'>
+    <header className={`fixed top-0 z-50 w-full -mx-mobile-margin md:-mx-tablet-margin lg:-mx-laptop-margin xl:-mx-desktop-margin
+                        ${isVisible ? 'transform translate-y-0' : 'transform -translate-y-full'}
+    `}>
+                <div className='py-5 flex justify-between items-center bg-green-700 px-mobile-margin md:px-tablet-margin lg:px-laptop-margin xl:px-desktop-margin'>
             <div className='flex items-center'>
                 <Image src="/logo.svg" alt="logo" width={50} height={50}></Image>
                 <span className='text-2xl font-bold text-white'>Travel</span>
