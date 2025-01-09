@@ -1,9 +1,10 @@
-import Qoutes from '@/components/Qoutes';
 import { 
     Header,
     Hero,
     Trends,
     About,
+    Qoutes,
+    Icon
   } from '@/lib/imports'
 
 
@@ -19,6 +20,7 @@ export default function Home() {
         <Trends id={1}/>
         <Trends id={2}/>
         <Qoutes/>
+        <Icon/>
       </div>
       
    </main>
