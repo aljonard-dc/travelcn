@@ -22,6 +22,7 @@ export default function Home() {
         <About />
         <Trends id={1}/>
         <Trends id={2}/>
+        <Qoutes/>
         <Footer/>
       </div>
       
