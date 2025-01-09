@@ -8,6 +8,14 @@ export type ButtonProps = {
   target?: "_self" | "_blank" | "_parent" | "_top"; 
 };
 
+export type iconProps = {
+  id: number,
+  title: string; 
+  icon: string;
+  href: string;
+  target?: "_self" | "_blank" | "_parent" | "_top"; 
+};
+
 //card prop
 export type cardProps = {
   id: number,

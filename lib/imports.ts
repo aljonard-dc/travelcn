@@ -3,13 +3,16 @@
 export { default as Header } from "@/components/ui/Header";
 export {default as Footer} from "@/components/ui/Footer";
 export { default as Button } from '@/components/ui/Button';
+export { default as Icon } from '@/components/ui/Icon';
 export { default as Card } from '@/components/ui/Card';
 
 //components
 export { default as Trends } from '@/components/Trends';
 export { default as About } from '@/components/About';
 export { default as DetailedPage } from '@/components/DetailedPage';
+export { default as IconMenu } from '@/components/IconMenu';
 export { default as Hero } from '@/components/Hero';
+export { default as Qoutes } from '@/components/Qoutes';
 
 
 
@@ -19,5 +22,6 @@ export {
     trends,
     travelCN,
     heroContent,
+    iconContent
 } from '@/data';
 

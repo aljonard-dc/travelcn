@@ -5,13 +5,13 @@ import { FaLevelDownAlt } from 'react-icons/fa';
 
 const Hero = ({id, type}:{id:number; type?:"home" | "destination" | "festival"}) => {
   return (
-    <section className="-mx-mobile-margin md:-mx-tablet-margin lg:-mx-laptop-margin xl:-mx-desktop-margin">
+    <section className="-mx-mobile-margin md:-mx-tablet-margin md:pt-10 lg:-mx-laptop-margin xl:-mx-desktop-margin">
       {
         heroContent.filter(content => content.id === id)
         .map(content => (
           <div 
           key={content.id}
-          className="relative w-full h-screen flex items-center justify-center">
+          className="relative w-full h-lvh md:h-screen flex items-center justify-center">
           <Image
               src={content.img}
               alt="banner"

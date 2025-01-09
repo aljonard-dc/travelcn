@@ -4,6 +4,9 @@ import {
     Hero,
     Trends,
     About,
+    Qoutes,
+    IconMenu
+    
   } from '@/lib/imports'
 
 
@@ -15,6 +18,7 @@ export default function Home() {
       <div className='px-mobile-margin md:px-tablet-margin lg:px-laptop-margin xl:px-desktop-margin'>
         <Header />
         <Hero id={1} type='home'/>
+        <IconMenu/>
         <About />
         <Trends id={1}/>
         <Trends id={2}/>
