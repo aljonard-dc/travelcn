@@ -4,6 +4,7 @@ import {
     Hero,
     Trends,
     About,
+    Qoutes,
     IconMenu
     
   } from '@/lib/imports'
@@ -21,9 +22,7 @@ export default function Home() {
         <About />
         <Trends id={1}/>
         <Trends id={2}/>
-        
         <Footer/>
-       
       </div>
       
    </main>
