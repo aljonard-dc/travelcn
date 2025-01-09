@@ -8,9 +8,15 @@ export default {
   ],
   theme: {
     extend: {
+      spacing: {
+        'mobile-margin': '1rem', 
+        'tablet-margin': '3.75rem', 
+        'laptop-margin': '6.25rem', 
+        'desktop-margin': '7.5rem', 
+      }, 
       colors: {
         white: {
-          50: "#ffffff",
+          DEFAULT: "#ffffff",
           100: "#efefef",
           200: "#dcdcdc",
           300: "#bdbdbd",
@@ -35,34 +41,55 @@ export default {
           900: "#3d3d3d",
           950: "#000000",
         },
-        blue: {
-          50: "#effaff",
-          100: "#def3ff",
-          200: "#b6eaff",
-          300: "#75dbff",
-          400: "#2cc9ff",
-          500: "#00adef",
-          600: "#008fd4",
-          700: "#0072ab",
-          800: "#00608d",
-          900: "#065074",
-          950: "#04334d",
+        yellow: {
+          50: "#fefee8",
+          100: "#feffc2",
+          200: "#fffc89",
+          300: "#fff44f",
+          400: "#fde512",
+          500: "#ecca06",
+          600: "#cc9f02",
+          700: "#a37105",
+          800: "#86590d",
+          900: "#724811",
+          950: "#432605",
         },
-        orange: {
-          50: "#fff9ed",
-          100: "#fef1d6",
-          200: "#fddfab",
-          300: "#fbc876",
-          400: "#f9a53e",
-          500: "#f68712",
-          600: "#e76f0f",
-          700: "#c0540e",
-          800: "#984314",
-          900: "#7b3913",
-          950: "#421a08",
+        green: {
+          50: "#f0f9f5",
+          100: "#daf1e4",
+          200: "#b8e2ce",
+          300: "#89ccaf",
+          400: "#57b08d",
+          500: "#369371",
+          600: "#25755a",
+          700: "#1e5e4a",
+          800: "#1a4b3c",
+          900: "#163e32",
+          950: "#0b231c",
         },
-     
+        
+        
       },
+      borderRadius: {
+        'none': '0',
+        'sm': '0.125rem',
+        DEFAULT: '8px',
+        'md': '0.375rem',
+        'lg': '0.5rem',
+        'full': '9999px',
+        'large': '12px',
+      },
+      screens: {
+        'sm': '640px',  // Small devices
+        'md': '768px',  // Tablets
+        'lg': '1024px', // Laptops
+        'xl': '1280px', // Desktops
+        '2xl': '1536px', // Large screens
+        // Custom breakpoints
+        'xs': '480px', 
+        '3xl': '1920px', 
+      },
+      
     },
   },
   plugins: [],
