@@ -1,5 +1,5 @@
 import React from 'react'
-import { Header, Hero, DetailedPage } from "@/lib/imports"
+import { Header, Footer, Hero, DetailedPage } from "@/lib/imports"
  
 
 const page = () => {
@@ -10,6 +10,7 @@ const page = () => {
         <Header />
         <Hero id={2} type='destination'/>
         <DetailedPage id={1}/>
+        <Footer/>
       </div>
 
    </main>

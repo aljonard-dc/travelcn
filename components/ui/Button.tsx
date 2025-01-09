@@ -14,7 +14,7 @@ const Button = ({ title, icon, className = "", href, target = "_self" }: ButtonP
     `}
     rel={target === "_blank" ? "noopener noreferrer" : undefined}>
     <span>{title}</span>
-    {icon && <span>{icon}</span>}
+    {icon && <span className=" text-yellow-950">{icon}</span>}
   </Link>
 );
 

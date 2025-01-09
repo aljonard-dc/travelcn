@@ -207,11 +207,31 @@ export const travelCN = [
     }
 ]
   
-export const qoutes = [
+export const qoutesContent = [
   {
     id: 1,
     text: "Camarines Norte, a province bursting with natural beauty and rich cultural heritage, offers an exquisite blend of pristine beaches, like the famed Mahabang Buhangin, and vibrant festivals such as the Pinyasan Festival. It’s a paradise for adventure seekers and cultural enthusiasts alike, making it a must-visit destination in the Philippines."
   }
 ]
+
+export const iconContent = [
+  {
+    id: 1,
+    title: "15 Notable Tourist Spots",
+    icon:"/Icons/festival-logo.svg",
+  },
+  {
+    id: 2,
+    title: "8 Major Festivals",
+    icon:"/Icons/tourist-logo.svg",
+  },
+  {
+    id: 3,
+    title: "Rich Cultural Heritage",
+    icon:"/Icons/heritage-icon.svg",
+  }
+]
+  
+
 
 
