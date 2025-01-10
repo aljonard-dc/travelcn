@@ -4,8 +4,8 @@ import { iconContent } from '@/lib/imports'
 
 const IconMenu = () => {
   return (
-    <section className= 'lg:h-36 -mx-mobile-margin md:-mx-tablet-margin lg:-mx-laptop-margin xl:-mx-desktop-margin'>
-        <div className='flex flex-row items-start justify-center gap-5 md:gap-40 -mt-6 md:-mt-14  absolute w-full'>
+    <section className= ' h-24 md:h-32 lg:h-44 -mx-mobile-margin md:-mx-tablet-margin lg:-mx-laptop-margin xl:-mx-desktop-margin'>
+        <div className='flex flex-row items-start justify-center gap-5 md:gap-24 lg:gap-40 -mt-6 md:-mt-14  absolute w-full'>
 
         {iconContent.filter(content => content.id).
         map((content) =>(
