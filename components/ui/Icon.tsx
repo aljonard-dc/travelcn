@@ -2,7 +2,7 @@ import { ButtonProps, iconProps } from '@/lib/props';
 import Link from 'next/link';
 import React from 'react'
 
-const Icon = ({ id, title, icon, href, target = "_self" }: iconProps) => {
+const Icon = ({ title, icon, href, target = "_self" }: iconProps) => {
     return (
         <Link
         href={href}
