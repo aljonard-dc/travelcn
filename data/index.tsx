@@ -214,6 +214,21 @@ export const qoutesContent = [
   }
 ]
 
+export const aboutContent = [
+  {
+    id: 1,
+    text: "Discover the wonders of each location. Along its eastern shores, Camarines Norte shares borders with Quezon and Camarines Sur, two neighboring provinces."
+  },
+  {
+    id: 2,
+    text: "The fertile plains and valleys of the coast contrast sharply with the rolling hills and mountains of the interior."
+  },
+  {
+    id: 3,
+    text: "The Calaguas group of islands, for example, are a blessing in this regard. As a result, the province is a great place to go boating or hiking."
+  },
+]
+
 export const iconContent = [
   {
     id: 1,

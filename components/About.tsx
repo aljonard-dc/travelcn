@@ -1,5 +1,6 @@
 import React from 'react'
 import Map from './ui/Map'
+import { aboutContent } from '@/data'
 
 const About = () => {
   return (
@@ -11,17 +12,19 @@ const About = () => {
               <span className='font-medium text-2xl md:text-3xl lg:text-4xl text-green-500'>Camarines Norte!</span>
             </div>
             <div className='py-2 grid gap-2'>
-              <p className='font-light text-md text-center md:text-left'>
-              Discover the wonders of each location. Along its eastern shores, Camarines Norte shares borders with Quezon and Camarines Sur, two neighboring provinces. 
-              </p>
 
-              <p className='font-light text-md text-center md:text-left'>
-              The fertile plains and valleys of the coast contrast sharply with the rolling hills and mountains of the interior.
-              </p>
+              {
+                aboutContent.filter(content =>content.id).
+                map((content) =>(
 
-              <p className='font-light text-md text-center md:text-left'>
-              The Calaguas group of islands, for example, are a blessing in this regard. As a result, the province is a great place to go boating or hiking.
-              </p>
+                  <p className='font-light text-md text-center md:text-left' key={content.id}>
+                    {content.text}
+                  </p>
+
+                ))
+
+              }
+              
             </div>
           </div>
           <div>
