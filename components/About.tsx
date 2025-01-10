@@ -1,5 +1,6 @@
 import React from 'react'
-import Image from 'next/image'
+import Map from './ui/Map'
+
 const About = () => {
   return (
     <section className='bg-green-100 my-8 py-10 -mx-mobile-margin md:-mx-tablet-margin lg:-mx-laptop-margin xl:-mx-desktop-margin'>
@@ -25,7 +26,9 @@ const About = () => {
           </div>
           <div>
 
-          <img src="MapTemp.png" className='w-full h-full object-cover'/>
+          <div>
+            <Map />
+          </div>
 
           </div>
         </div>

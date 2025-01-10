@@ -10,7 +10,7 @@ const Trends = ({id}: {id:number}) => {
                 <div key={idx} className='text-center'>
                     <h1 className='text-2xl md:text-3xl lg:text-4xl font-semibold text-green-950'>{item.title}</h1>
                     <p className='text-green-950/80 text-base md:text-lg lg:text-xl pt-6'>{item.description}</p>
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 pt-7 justify-center'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-7 justify-center'>
 
                 {
                     item.trends && item.trends.map((item, idx) => (
