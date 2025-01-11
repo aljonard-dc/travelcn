@@ -210,7 +210,7 @@ export const travelCN = [
 export const qoutesContent = [
   {
     id: 1,
-    text: "Camarines Norte, a province bursting with natural beauty and rich cultural heritage, offers an exquisite blend of pristine beaches, like the famed Mahabang Buhangin, and vibrant festivals such as the Pinyasan Festival. It’s a paradise for adventure seekers and cultural enthusiasts alike, making it a must-visit destination in the Philippines."
+    text: "“Camarines Norte, a province bursting with natural beauty and rich cultural heritage, offers an exquisite blend of pristine beaches, like the famed Mahabang Buhangin, and vibrant festivals such as the Pinyasan Festival. It’s a paradise for adventure seekers and cultural enthusiasts alike, making it a must-visit destination in the Philippines.”"
   }
 ]
 
@@ -247,6 +247,75 @@ export const iconContent = [
   }
 ]
   
+export const municipalityContent = [
+
+  {
+    id: 0,
+    name: "Camarines Norte",
+    description: 'Discover the wonders of each location. Along its eastern shores, Camarines Norte shares borders with Quezon and Camarines Sur, two neighboring provinces. The fertile plains and valleys of the coast contrast sharply with the rolling hills and mountains of the interior.  The Calaguas group of islands, for example, are a blessing in this regard. As a result, the province is a great place to go boating or hiking'
+  },
+  
+  {
+    id: 1,
+    name: "Basud",
+    description: "Basud invites visitors to immerse themselves in nature with its picturesque landscapes, lush forests, and serene rivers. Known for its agricultural richness, it’s a great destination for eco-tourism and rural experiences. Top attractions include Basud River and local farms."
+  },
+  {
+    id: 2,
+    name: "Capalonga",
+    description: "Capalonga offers a blend of natural beauty and cultural richness. Its pristine beaches and historical landmarks make it perfect for travelers seeking both relaxation and a deeper connection with local heritage. Top attractions include Capalonga Beach and historical churches."
+  },
+  {
+    id: 3,
+    name: "Daet",
+    description: "Daet, the provincial capital, is where history meets modernity. Known for its thriving markets, festivals, and accessibility, Daet serves as a hub for travelers exploring the region. Notable attractions include Daet Town Plaza, Bagasbas Beach, and Daet Public Market."
+  },
+  {
+    id: 4,
+    name: "Jose Panganiban",
+    description: "Jose Panganiban is a coastal town known for its beautiful shorelines and thriving fishing industry. It’s an excellent spot for seafood lovers and those looking to enjoy the calm coastal life. Popular attractions include Jose Panganiban Beach and fresh seafood markets."
+  },
+  {
+    id: 5,
+    name: "Labo",
+    description: "Labo is home to breathtaking landscapes and outdoor adventures. Known for its scenic mountains, hiking trails, and cool climate, it’s perfect for nature enthusiasts and adventure seekers. Highlights include Labo’s mountain trails and waterfalls."
+  },
+  {
+    id: 6,
+    name: "Santa Elena",
+    description: "Santa Elena is a town rich in local traditions and historical significance, offering an excellent place to discover the province’s culture and history. Visit local museums and explore traditional arts and crafts to experience the local heritage."
+  },
+  {
+    id: 7,
+    name: "Mercedes",
+    description: "Mercedes boasts pristine white sand beaches and nearby islands, making it an ideal location for beach lovers and island-hopping enthusiasts. It’s a peaceful destination perfect for relaxation and water sports. Key attractions include Mercedes Islands and white sand beaches."
+  },
+  {
+    id: 8,
+    name: "Paracale",
+    description: "Paracale, known for its gold mining history, offers a unique glimpse into the past while providing visitors with scenic mountain views and historical landmarks. Visitors can explore Paracale Gold Mines and other historical sites."
+  },
+  {
+    id: 9,
+    name: "San Lorenzo Ruiz",
+    description: "San Lorenzo Ruiz is a place of pilgrimage, named after the first Filipino saint. This peaceful town attracts visitors seeking spiritual enrichment and a deep connection with Filipino faith. The San Lorenzo Ruiz Shrine is the main attraction for reflection and meditation."
+  },
+  {
+    id: 10,
+    name: "San Vicente",
+    description: "San Vicente is a haven for those seeking peace away from the hustle and bustle. With its cool climate, picturesque sceneries, and inviting atmosphere, it’s perfect for relaxation. Attractions include San Vicente Eco Parks and mountain resorts."
+  },
+  {
+    id: 11,
+    name: "Talisay",
+    description: "Talisay is a quiet, charming town known for its scenic beauty and friendly locals. It offers a peaceful atmosphere, making it a perfect getaway for those looking to unwind. Enjoy Talisay Beach and immerse yourself in local cultural festivals."
+  },
+  {
+    id: 12,
+    name: "Vinzons",
+    description: "Vinzons celebrates both its historical significance and natural beauty. It’s ideal for travelers who appreciate historical landmarks and breathtaking landscapes. Attractions include Vinzons Historical Sites and adventure trails."
+  }
+];
 
 
 
