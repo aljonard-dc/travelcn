@@ -1,9 +1,38 @@
 "use client"
 
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import { municipalityContent } from '@/data'
+import { motion, useInView } from 'framer-motion';
 
 const About = () => {
+
+	const sectionRef = useRef(null);
+	const isInView = useInView(sectionRef, { margin: "-50px"})
+
+
+	const containerVariants = {
+		hidden: {
+		  opacity: 0, y: 50
+		},
+		visible: {
+		  opacity: 1, y: 0, transition: {
+			duration: 0.8, ease: 'easeIn'
+		  }
+		}
+	  }
+
+	  const mapVariants = {
+		hidden: {
+		  opacity: 0, y: 50
+		},
+		visible: {
+		  opacity: 1, y: 0, transition: {
+			duration: 0.8, ease: 'easeOut'
+		  }
+		}
+	  }
+
+	  
 	const [hoverText, setHoverText] = useState('');
 	const [hoverContent, setHoverContent] = useState('');
 	const [isHovering, setIsHovering] = useState(false);
@@ -19,6 +48,8 @@ const About = () => {
 
 	  setHoverText(name);
 	  setIsHovering(true);
+
+	  
 	};
   
 	const handleMouseLeave = () => {
@@ -26,9 +57,17 @@ const About = () => {
 	  setIsHovering(false);
 	};
 
+	
+
 
   return (
-	<section className='bg-green-100 my-8 py-10 -mx-mobile-margin md:-mx-tablet-margin lg:-mx-laptop-margin xl:-mx-desktop-margin'>
+	<motion.section 
+	ref={sectionRef}
+    initial="hidden"
+    animate={isInView ? 'visible' : 'hidden'}
+    exit="hidden"
+    variants={containerVariants}
+	className='bg-green-100 my-8 py-10 -mx-mobile-margin md:-mx-tablet-margin lg:-mx-laptop-margin xl:-mx-desktop-margin'>
         <div className='px-mobile-margin md:px-tablet-margin lg:px-laptop-margin xl:px-desktop-margin grid grid-flow-row md:grid-cols-2 gap-8 md items-center'>
          
 		<div className=' grid grid-flow-row'>
@@ -51,7 +90,13 @@ const About = () => {
 				  </div>
       
 
-		<div className="relative">
+		<motion.div
+		ref={sectionRef}
+		initial = "hidden"
+		animate={isInView ? 'visible' : 'hidden'}
+		exit="hidden"
+		variants={mapVariants}
+		className="relative">
 		<svg   version="1.1"
 			id="Layer_2"
 			xmlns="http://www.w3.org/2000/svg"
@@ -258,9 +303,9 @@ const About = () => {
 			c8-7.9,10.8-19.3,15-29.9c5.4-14.2,11.1-28.7,19.9-40.9l0.1-0.2c23.8-34.3,56-60.9,87.8-87.5c6.6-5.9,13-12.6,19.7-18.5
 			c6.1-5.8,7.3-4.4,16.6-10.2c1.4-0.9,9.8-4.5,9.8-6.2c0,0,0,0,0,0C477.7,1074.6,488.8,1048.8,500.9,1023.5z"/>
 		</svg>
-		</div>
+		</motion.div>
 	</div>
-</section>
+</motion.section>
   )
 }
 
