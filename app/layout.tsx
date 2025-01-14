@@ -10,6 +10,9 @@ const newsreader = Newsreader({
 export const metadata: Metadata = {
   title: "Travel CN",
   description: "Start your travel with us",
+  icons: {
+    icon: "/logo.svg", // Path to your favicon
+  },
 }
 
 export default function RootLayout({
