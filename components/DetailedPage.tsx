@@ -3,6 +3,7 @@
 import React from 'react'
 import { travelCN, Button } from '@/lib/imports'
 import { motion } from 'framer-motion'
+import Link from 'next/link';
 
 const DetailedPage = ({id}: {id: number}) => {
   const animationDuration = 0.8;
@@ -59,7 +60,7 @@ const DetailedPage = ({id}: {id: number}) => {
                           viewport={{ once: false }}
                           className='flex justify-center md:justify-start'
                         >
-                          <Button href='' title="Learn more!" />
+                          <Link href='' title="Learn more!" />
                         </motion.div>
                       </div>
                       <motion.div
