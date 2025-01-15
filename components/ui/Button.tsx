@@ -8,7 +8,7 @@ const Button = ({ title, icon, className = "", href, target = "_self" }: ButtonP
     target={target}
     className={`
       flex items-center justify-center gap-2 text-yellow-950 bg-yellow-500 rounded-md 
-      text-xs px-4 py-2 font-medium max-w-24
+      text-xs px-4 py-2 font-medium max-w-28
       md:text-sm md:px-5 md:py-3 md:max-w-32
       lg:text-base lg:px-6 lg:py-3 lg:max-w-36
       ${className}
