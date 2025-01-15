@@ -60,7 +60,7 @@ const DetailedPage = ({id}: {id: number}) => {
                           viewport={{ once: false }}
                           className='flex justify-center md:justify-start'
                         >
-                          <Link href='' title="Learn more!" />
+                          <Button href='' title='Learn More!'/>
                         </motion.div>
                       </div>
                       <motion.div
