@@ -3,7 +3,7 @@
 import React from 'react'
 import { travelCN, Button } from '@/lib/imports'
 import { motion } from 'framer-motion'
-import Link from 'next/link';
+import Image from 'next/image';
 
 const DetailedPage = ({id}: {id: number}) => {
   const animationDuration = 0.8;
@@ -70,7 +70,7 @@ const DetailedPage = ({id}: {id: number}) => {
                         viewport={{ once: false }}
                         className={`${idx % 2 === 0 ? 'order-1' : 'order-1 md:order-2'} h-full w-auto`}
                       >
-                        <img src={place.img} alt={place.name} className='w-full h-full object-cover' />
+                        <Image src={place.img} alt={place.name} className='w-full h-full object-cover' />
                       </motion.div>
                     </motion.div>
                   ))

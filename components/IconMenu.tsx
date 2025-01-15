@@ -20,8 +20,6 @@ const IconMenu = () => {
           duration: 0.8, ease: 'easeIn'
         }
       }
-  
-      
     }
   return (
     <motion.section
@@ -42,7 +40,6 @@ const IconMenu = () => {
             id={content.id}
             icon={content.icon}
             title={content.title}
-            href=''
             />
         </div>
         
