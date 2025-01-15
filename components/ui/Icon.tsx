@@ -8,6 +8,8 @@ const Icon = ({ title, icon }: iconProps) => {
             <div className='flex flex-col gap-4 max-w-24 md:max-w-32 items-center justify-center'>
                 <div className='flex items-center justify-center w-12 md:w-24 h-12 md:h-24 rounded-full border-2 border-green-400'>
                     <Image
+                        width={120}
+                        height={120}
                         src={icon}
                         alt={title}
                         className="object-cover"
@@ -18,8 +20,7 @@ const Icon = ({ title, icon }: iconProps) => {
            
         </section>
         
-
-            
+    
         );
   };
 
