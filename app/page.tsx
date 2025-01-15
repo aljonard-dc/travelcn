@@ -10,6 +10,7 @@ import {
   } from '@/lib/imports'
 
 
+
 export default function Home() {
  
 
@@ -21,8 +22,9 @@ export default function Home() {
         <IconMenu/>
         <About />
         <Trends id={1}/>
-        <Trends id={2}/>
         <Qoutes/>
+        <Trends id={2}/>
+        
         <Footer/>
       </div>
       
